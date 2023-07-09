@@ -1,0 +1,74 @@
+.item {
+  background-color: white;
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item:hover {
+  opacity: 0.7;
+}
+.item > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.item > div:first-of-type > h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0px 20px;
+  font-size: 18px;
+}
+
+.description {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #808484;
+
+  font-size: 14px;
+  height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #808484;
+  font-size: 17px;
+  width: 60px;
+}
+
+.item > div > div {
+  display: flex;
+  gap: 15px;
+}
+
+[class|="icon"] {
+  color: orange;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.item > img {
+  height: 130px;
+  width: 130px;
+  border-radius: 5px;
+  object-fit: cover;
+  align-self: center;
+}
+
+@media (max-width: 1130px) {
+  .item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 885px) {
+}
+@media (max-width: 730px) {
+}

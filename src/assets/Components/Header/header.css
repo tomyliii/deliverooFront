@@ -1,0 +1,22 @@
+header {
+  background-color: white;
+}
+
+header > div > img {
+  width: 155px;
+  height: 40px;
+}
+
+header {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  height: 60px;
+}
+
+.wrap-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
