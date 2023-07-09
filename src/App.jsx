@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState({});
   const [isReady, setIsReady] = useState({
     status: false,
-    value: "Is loading...please wait a few moments",
+    value: "Is loading...please wait a few moments...",
   });
   useEffect(() => {
     const fetchData = async () => {
