@@ -10,6 +10,8 @@ function App() {
     status: false,
     value: "Is loading...please wait a few moments...",
   });
+  const [showBottomCart, setShowBottomCart] = useState(false);
+  const [cart, setCart] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const { data } = await axios.get(
@@ -31,7 +33,13 @@ function App() {
       {isReady.status === true ? (
         <div className="body">
           <Header />
-          <Main data={data} />
+          <Main
+            data={data}
+            cart={cart}
+            setCart={setCart}
+            showBottomCart={showBottomCart}
+            setShowBottomCart={setShowBottomCart}
+          />
         </div>
       ) : (
         <div className="isReady">

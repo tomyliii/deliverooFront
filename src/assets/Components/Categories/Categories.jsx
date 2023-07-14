@@ -10,6 +10,8 @@ const Categories = (props) => {
             data={props.data}
             key={categorie.layoutId}
             categorie={categorie}
+            cart={props.cart}
+            setCart={props.setCart}
           />
         );
       })}

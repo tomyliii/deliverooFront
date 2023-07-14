@@ -15,6 +15,8 @@ const Categorie = (props) => {
             items={itemsArray}
             data={props.data}
             categorie={props.categorie}
+            cart={props.cart}
+            setCart={props.setCart}
           />
         </div>
       ) : (
